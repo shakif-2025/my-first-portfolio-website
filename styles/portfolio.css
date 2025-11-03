@@ -126,7 +126,7 @@ main {
 }
 main section {
   margin-top: 130px;
-  margin-bottom: 130px;
+  margin-bottom: 150px;
 }
 /* About styles*/
 
@@ -175,4 +175,72 @@ main section {
 }
 .skill-card-description {
   width: 200px;
+}
+
+/* resume styles */
+.resume h1 {
+  text-align: center;
+}
+.education-experience {
+  display: flex;
+  gap: 70px;
+  /* justify-content: space-between; */
+  margin-top: 130px;
+  margin-bottom: 120px;
+}
+.education-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #474747;
+}
+
+.degree-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #474747;
+}
+
+.education-sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #474747;
+}
+.education-description {
+  font-weight: 600;
+  color: #47474781;
+}
+
+.resume-btn {
+  display: block;
+  margin: auto;
+  margin-top: -70px;
+}
+
+/* Footer styles */
+
+.footer {
+  background-color: #fff8f3;
+
+  padding: 130px 230px;
+
+  display: flex;
+  gap: 100px;
+}
+
+.footer-column {
+  width: 50%;
+}
+
+.footer input[type="text"],
+.footer input[type="email"],
+.footer textarea {
+  width: 460px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 0px 30px;
+  margin-bottom: 24px;
+  display: block;
+  background-color: white;
+
+  border: none;
 }
