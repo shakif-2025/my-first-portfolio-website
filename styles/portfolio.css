@@ -181,6 +181,9 @@ main section {
 .resume h1 {
   text-align: center;
 }
+.education .experience {
+  width: 100%;
+}
 .education-experience {
   display: flex;
   gap: 70px;
