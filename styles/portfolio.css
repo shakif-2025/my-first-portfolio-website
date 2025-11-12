@@ -238,7 +238,7 @@ main section {
 .footer input[type="text"],
 .footer input[type="email"],
 .footer textarea {
-  /* width: 440px; */
+  width: 440px;
   height: 50px;
   border-radius: 5px;
   padding: 5px 30px;
