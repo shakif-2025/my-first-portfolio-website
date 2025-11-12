@@ -159,6 +159,7 @@ main section {
 }
 .skills-card-container {
   display: flex;
+  gap: 24px;
   justify-content: space-between;
   margin-bottom: 30px;
 }
@@ -264,10 +265,16 @@ main section {
   .skills-card-container,
   .education-experience-container,
   nav,
-  .footer {
+  .footer-columns {
     flex-direction: column;
   }
-
+  .footer-column .section-title {
+    font-size: 30px;
+  }
+  .footer-column .section-description {
+    font-size: 16px;
+    width: 300px;
+  }
   .header {
     background-image: none;
   }
@@ -325,7 +332,8 @@ main section {
   .education-description,
   .banner-greetings,
   .banner-title,
-  .banner-description {
+  .banner-description,
+  .footer-column .section-title {
     text-align: center;
   }
   .resume,
