@@ -296,7 +296,7 @@ main section {
   }
 
   .skill-card-description {
-    width: 347px;
+    width: 290px;
   }
 
   .about {
@@ -305,6 +305,11 @@ main section {
   .about-items {
     flex-direction: column;
   }
+
+  .about-border {
+    border: none;
+  }
+
   .education-title,
   .degree-title,
   .education-sub-title,
