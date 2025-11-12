@@ -12,7 +12,9 @@
 .text-secondary {
   color: #181818;
 }
-
+.text-center {
+  text-align: center;
+}
 .dark-2 {
   color: #474747;
 }
@@ -43,6 +45,7 @@
   font-weight: 500;
   color: #757575;
   /* width: 820px; */
+  text-align: center;
 }
 
 /* header styles */
@@ -156,7 +159,6 @@ main section {
 }
 .skills-card-container {
   display: flex;
-  /* gap: 24px; */
   justify-content: space-between;
   margin-bottom: 30px;
 }
@@ -184,7 +186,7 @@ main section {
 .education .experience {
   width: 100%;
 }
-.education-experience {
+.education-experience-container {
   display: flex;
   gap: 70px;
   /* justify-content: space-between; */
@@ -223,7 +225,6 @@ main section {
 
 .footer {
   background-color: #fff8f3;
-
   padding: 130px 230px;
 
   display: flex;
@@ -237,13 +238,95 @@ main section {
 .footer input[type="text"],
 .footer input[type="email"],
 .footer textarea {
-  width: 460px;
+  /* width: 440px; */
   height: 50px;
   border-radius: 5px;
-  padding: 0px 30px;
+  padding: 5px 30px;
   margin-bottom: 24px;
   display: block;
   background-color: white;
-
   border: none;
+}
+
+/* Responsive media query */
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .skills-card-container,
+  .education-experience-container,
+  nav,
+  .footer {
+    flex-direction: column;
+  }
+
+  .header {
+    background-image: none;
+  }
+  nav ul {
+    flex-direction: column;
+
+    margin-top: -20px;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  .banner {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .banner-profile-pic {
+    width: 100%;
+  }
+  .banner-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-buttons button {
+    margin-top: 20px;
+    width: 220px;
+  }
+
+  .skill-card-description {
+    width: 347px;
+  }
+
+  .about {
+    padding: 0;
+  }
+  .about-items {
+    flex-direction: column;
+  }
+  .education-title,
+  .degree-title,
+  .education-sub-title,
+  .education-description,
+  .banner-greetings,
+  .banner-title,
+  .banner-description {
+    text-align: center;
+  }
+  .resume,
+  .skills {
+    margin-bottom: 80px;
+  }
+  .footer {
+    padding: 20px;
+    gap: 20px;
+  }
+  .footer-column {
+    width: 100%;
+  }
+  .footer input[type="text"],
+  .footer input[type="email"],
+  .footer textarea {
+    width: calc(100% - 40px);
+  }
 }
