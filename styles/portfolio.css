@@ -189,7 +189,7 @@ main section {
 .education-experience-container {
   display: flex;
   gap: 70px;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin-top: 130px;
   margin-bottom: 120px;
 }
@@ -218,7 +218,7 @@ main section {
 .resume-btn {
   display: block;
   margin: auto;
-  margin-top: -70px;
+  margin-top: -30px;
 }
 
 /* Footer styles */
@@ -267,8 +267,8 @@ main section {
   }
   nav ul {
     flex-direction: column;
-
-    margin-top: -20px;
+    gap: 10px;
+    margin: 5px 0px;
   }
   nav ul li {
     margin-bottom: 10px;
@@ -279,6 +279,7 @@ main section {
   }
   .banner-content {
     width: 100%;
+    margin-bottom: 50px;
   }
   .banner-profile-pic {
     width: 100%;
@@ -328,5 +329,8 @@ main section {
   .footer input[type="email"],
   .footer textarea {
     width: calc(100% - 40px);
+  }
+  .footer-button {
+    margin-bottom: 300px;
   }
 }
